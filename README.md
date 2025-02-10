@@ -24,7 +24,7 @@ A text user interface (TUI) for managing VMware Workstation virtual machines. Bu
 
 1. Clone the repository:
 bash
-git clone https://github.com/meanaverage/vmware-manager.git
+git clone https://github.com/meanaverage/vmware-tui.git
 cd vmware-manager
 
 2. Create a virtual environment (optional but recommended):
