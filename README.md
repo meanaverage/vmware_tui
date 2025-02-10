@@ -30,13 +30,15 @@ cd vmware-manager
 2. Create a virtual environment (optional but recommended):
 bash
 python -m venv .venv
-source .venv/bin/activate # On Windows: .venv\Scripts\activate
+source .venv/bin/activate
 
-3. Install dependencies:
+On Windows: .venv\Scripts\activate
+
+4. Install dependencies:
 bash
 pip install -r requirements.txt
 
-4. Configure credentials:
+5. Configure credentials:
 bash
 cp .env.example .env
 
