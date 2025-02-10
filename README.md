@@ -63,6 +63,7 @@ The VMware Workstation REST API must be enabled and configured:
 1. Enable the REST API in VMware Workstation
 2. Set up your credentials in the `.env` file
 3. Ensure the API is accessible at the configured URL
+(Set up port forwarding if using outside of local host, REST API does not natively support serving on external interfaces)
 
 ## License
 
