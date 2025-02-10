@@ -195,15 +195,16 @@ class MainMenu(BaseMenu):
 
     def get_status_color(self, status: str) -> int:
         """Get the color pair for a VM status."""
+        theme = THEMES.get(get_current_theme(), THEMES["ubuntu"])
         status = status.lower()
         
         if status == 'poweredon':
-            return curses.color_pair(2)
+            return curses.color_pair(2)  # Uses theme's powered_on color
         elif status == 'poweredoff':
-            return curses.color_pair(3)
+            return curses.color_pair(3)  # Uses theme's powered_off color
         elif status == 'suspended':
-            return curses.color_pair(4)
-        return curses.color_pair(1)
+            return curses.color_pair(4)  # Could add suspended color to themes
+        return curses.color_pair(1)  # Default theme text color
 
     def draw_empty_screen(self):
         """Draw initial empty screen with borders and basic layout."""

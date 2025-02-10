@@ -23,27 +23,47 @@ DEFAULT_THEMES = {
     },
     "matrix": {
         "name": "Matrix",
-        "background": curses.COLOR_BLACK,
-        "text": curses.COLOR_GREEN,
-        "powered_on": curses.COLOR_GREEN,
+        "background": curses.COLOR_GREEN,
+        "text": curses.COLOR_BLACK,
+        "powered_on": curses.COLOR_WHITE,
         "powered_off": curses.COLOR_RED,
         "selected": curses.COLOR_GREEN,
+        "selected_bg": curses.COLOR_BLACK,
+        "use_bold": True
+    },
+    "midnight": {
+        "name": "Midnight",
+        "background": curses.COLOR_BLUE,
+        "text": curses.COLOR_CYAN,
+        "powered_on": curses.COLOR_GREEN,
+        "powered_off": curses.COLOR_RED,
+        "selected": curses.COLOR_BLACK,
+        "selected_bg": curses.COLOR_CYAN,
+        "use_bold": True
+    },
+    "classic": {
+        "name": "Classic",
+        "background": curses.COLOR_BLACK,
+        "text": curses.COLOR_WHITE,
+        "powered_on": curses.COLOR_GREEN,
+        "powered_off": curses.COLOR_RED,
+        "selected": curses.COLOR_BLACK,
+        "selected_bg": curses.COLOR_WHITE,
+        "use_bold": False
+    },
+    "solarized": {
+        "name": "Solarized",
+        "background": curses.COLOR_YELLOW,
+        "text": curses.COLOR_BLACK,
+        "powered_on": curses.COLOR_GREEN,
+        "powered_off": curses.COLOR_RED,
+        "selected": curses.COLOR_YELLOW,
         "selected_bg": curses.COLOR_BLACK,
         "use_bold": True
     },
     "dracula": {
         "name": "Dracula",
         "background": curses.COLOR_MAGENTA,
-        "text": curses.COLOR_WHITE,
-        "powered_on": curses.COLOR_GREEN,
-        "powered_off": curses.COLOR_RED,
-        "selected": curses.COLOR_BLACK,
-        "selected_bg": curses.COLOR_WHITE,
-        "use_bold": True
-    },
-    "solarized": {
-        "name": "Solarized",
-        "background": curses.COLOR_CYAN,
         "text": curses.COLOR_BLACK,
         "powered_on": curses.COLOR_GREEN,
         "powered_off": curses.COLOR_RED,
@@ -54,6 +74,16 @@ DEFAULT_THEMES = {
     "nord": {
         "name": "Nord",
         "background": curses.COLOR_CYAN,
+        "text": curses.COLOR_BLACK,
+        "powered_on": curses.COLOR_GREEN,
+        "powered_off": curses.COLOR_RED,
+        "selected": curses.COLOR_WHITE,
+        "selected_bg": curses.COLOR_BLACK,
+        "use_bold": True
+    },
+    "monokai": {
+        "name": "Monokai",
+        "background": curses.COLOR_MAGENTA,
         "text": curses.COLOR_WHITE,
         "powered_on": curses.COLOR_GREEN,
         "powered_off": curses.COLOR_RED,

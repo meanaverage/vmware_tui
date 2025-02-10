@@ -189,11 +189,13 @@ class VMMenu(BaseMenu):
                 self.vm_messages_window.addstr(1, 2, status)
                 
                 if self.power_state.lower() == 'poweredoff':
-                    self.vm_messages_window.attron(curses.color_pair(3))  # Red
+                    theme = THEMES.get(get_current_theme(), THEMES["ubuntu"])
+                    self.vm_messages_window.attron(curses.color_pair(3))  # Use theme's powered_off color
                     self.vm_messages_window.addstr(1, 2 + len(status), self.power_state)
                     self.vm_messages_window.attroff(curses.color_pair(3))
                 elif self.power_state.lower() == 'poweredon':
-                    self.vm_messages_window.attron(curses.color_pair(2))  # Green
+                    theme = THEMES.get(get_current_theme(), THEMES["ubuntu"])
+                    self.vm_messages_window.attron(curses.color_pair(2))  # Use theme's powered_on color
                     self.vm_messages_window.addstr(1, 2 + len(status), self.power_state)
                     self.vm_messages_window.attroff(curses.color_pair(2))
                 else:
