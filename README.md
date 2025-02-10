@@ -23,3 +23,45 @@ A text user interface (TUI) for managing VMware Workstation virtual machines. Bu
 ## Installation
 
 1. Clone the repository:
+bash
+git clone https://github.com/meanaverage/vmware-manager.git
+cd vmware-manager
+
+2. Create a virtual environment (optional but recommended):
+bash
+python -m venv .venv
+source .venv/bin/activate # On Windows: .venv\Scripts\activate
+
+3. Install dependencies:
+bash
+pip install -r requirements.txt
+
+4. Configure credentials:
+bash
+cp .env.example .env
+
+Edit `.env` with your VMware Workstation REST API credentials.
+
+## Usage
+
+Run the application:
+
+python main.py
+
+### Controls
+- ↑/↓: Navigate
+- Enter: Select
+- c: Configuration menu
+- q: Quit
+
+## Configuration
+
+The VMware Workstation REST API must be enabled and configured:
+
+1. Enable the REST API in VMware Workstation
+2. Set up your credentials in the `.env` file
+3. Ensure the API is accessible at the configured URL
+
+## License
+
+[MIT License](LICENSE)
